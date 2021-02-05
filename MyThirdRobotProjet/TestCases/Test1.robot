@@ -1,5 +1,6 @@
 *** Settings ***
-Library    SeleniumLibrary    
+Library    SeleniumLibrary 
+   
  
 *** Test Cases ***
 loginTest1
@@ -67,6 +68,10 @@ loginTest4
     Set Selenium Implicit Wait    20s        #attendre pour un élément specifique
     
     Click Button    xpath=//input[@id='btnLogin1']  
+
+logintest5
+    Log To Console    Hello    
+    [Documentation]    Ceci est un simple test
       
 
  
